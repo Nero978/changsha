@@ -1,0 +1,136 @@
+.banner {
+    background-image: url("../img/culture.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.show-box {
+    width: auto;
+    height: fit-content;
+    padding: 100px 200px;
+    background-color: white;
+}
+
+.card {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card-img {
+    position: relative;
+    float: left;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/i_tri.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+}
+
+.card-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card-img h2 {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.card-text {
+    float: left;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text p {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0 50px 0 50px;
+}
+
+.card-text p:first-child {
+    margin-top: 20px;
+}
+
+.card-text p:last-child {
+    margin-bottom: 0;
+}
+
+.card-text p i {
+    font-size: 36px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-text p i:hover {
+    color: rgb(95, 100, 100);
+}

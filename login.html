@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>长沙 | 登录</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-origin" id="navbar">
+            <ul>
+                <li><a href="index.html"><img id="navLogo" src="img/logo-white.png" alt=""></a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#scenicSpot">景点</a></li>
+                <li><a href="culture.html">文化</a></li>
+                <li><a href="history.html">历史</a></li>
+                <li><a href="index.html#about">关于</a></li>
+                <li>
+                    <a href="search.html"><i class="bi bi-search"></i></a>
+                    <a href="login.html"><i class="bi bi-person-circle"></i></a>
+                    <a href="javascript:unavailable();"><i class="bi bi-translate"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="login-bg">
+            <div class="login">
+                <h1>
+                    <span class="switchActive" id="login-switch">登录</span>
+                    <span id="register-switch">注册</span>
+                </h1>
+                <form class="loginArea" id="loginArea">
+                    <div class="input">
+                        <h1>朋友，欢迎回来！</h1>
+                        <input type="text" name="username" id="username" placeholder="用户名">
+                        <input type="password" name="password" id="password" placeholder="密码">
+                        <p>
+                            当您登录或注册时，即代表您已阅读并接受
+                            <a href="https://www.rxgzs.cn/clause/">《服务条款》</a>
+                            和
+                            <a href="https://www.rxgzs.cn/privacy/">《隐私政策》</a>
+                            。
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="login-btn">登录</button>
+                    </div>
+                </form>
+                <form class="unvisible loginArea" id="registerArea">
+                    <div class="input">
+                        <h1>让我们开始吧！</h1>
+                        <input type="text" name="username" id="username" placeholder="用户名">
+                        <input type="password" name="password" id="password" placeholder="密码">
+                        <input type="password" name="password" id="password" placeholder="确认密码">
+                        <p>当您登录或注册时，即代表您已阅读并接受
+                            <a href="https://www.rxgzs.cn/clause/">《服务条款》</a>
+                            和
+                            <a href="https://www.rxgzs.cn/privacy/">《隐私政策》</a>
+                            。
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="register-btn">注册</button>
+                    </div>
+                </form>
+                <div class="hr">
+                    <hr>
+                    <p>OR</p>
+                </div>
+
+                <div class="otherLogin">
+                    <button id="qq-btn"><i class="bi bi-tencent-qq"></i>QQ登录</button>
+                    <button id="wechat-btn"><i class="bi bi-wechat"></i>微信登录</button>
+                    <button id="weibo-btn"><i class="bi bi-sina-weibo"></i>微博登录</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="about">
+            <div class="info">
+                <div class="linkArea">
+                    <h3>网站地图</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="index.html#scenicSpot">景点</a></li>
+                        <li><a href="culture.html">文化</a></li>
+                        <li><a href="history.html">历史</a></li>
+                    </ul>
+                </div>
+                <div class="linkArea">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="http://www.changsha.gov.cn/">长沙市政府</a></li>
+                        <li><a href="https://www.hncsmtr.com/">长沙轨道交通</a></li>
+                        <li><a href="http://corp.mgtv.com/">湖南广播电视台</a></li>
+                    </ul>
+                </div>
+                <div class="linkArea">
+                    <h3>服务协议</h3>
+                    <ul>
+                        <li><a href="http://rxgzs.cn/clause">用户条款</a></li>
+                        <li><a href="https://rxgzs.cn/privacy">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="logoArea">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="copy">
+                <hr>
+                <p>Copyright © 2023 Chris Liu All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

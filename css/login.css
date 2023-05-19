@@ -1,0 +1,207 @@
+.login-bg {
+    background-image: url("../img/login-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+}
+
+.login {
+    position: relative;
+    top: 3%;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.login h1 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.login h1 span {
+    position: relative;
+    cursor: pointer;
+}
+
+.switchActive {
+    font-weight: 600;
+    z-index: 5;
+}
+
+.switchActive::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(109, 143, 216);
+    bottom: 2px;
+    left: -2px;
+    z-index: -1;
+}
+
+.loginArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginArea .input {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginArea .input h1 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.loginArea .input input {
+    width: auto;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgb(45, 57, 83);
+    padding: 0 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.loginArea .input input:hover {
+    box-shadow: 0 8px 12px 0 rgba(45, 57, 83, 0.1);
+}
+
+.loginArea .input input:focus {
+    box-shadow: 0 8px 12px 0 rgba(45, 57, 83, 0.1);
+}
+
+.loginArea .input p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(45, 57, 83);
+}
+
+.loginArea .input p a {
+    color: rgb(97, 124, 184);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.loginArea .input p a:hover {
+    color: rgb(45, 57, 83);
+}
+
+
+.loginArea .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginArea .btn button {
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(45, 57, 83);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.loginArea .btn button:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login .hr {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login .hr p {
+    position: absolute;
+    left: 45%;
+    top: -8px;
+    font-size: 10px;
+    padding: 0 10px;
+    margin: 0;
+    background: white;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.unvisible {
+    display: none;
+}
+
+.otherLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otherLogin button {
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #f3f3f3;
+    color: rgb(45, 57, 83);
+    border: none;
+    margin: 8px auto;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.otherLogin button i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.otherLogin button:first-child {
+    margin-top: 0;
+}
+
+.otherLogin button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#qq-btn:hover {
+    background-color: #00a1d6;
+}
+
+#wechat-btn:hover {
+    background-color: #00bb29;
+}
+
+#weibo-btn:hover {
+    background-color: #e6162d;
+}

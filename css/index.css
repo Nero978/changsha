@@ -1,0 +1,576 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .black-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.banner .title {
+    position: relative;
+    z-index: 3;
+    margin: 0px auto;
+    text-align: center;
+    user-select: none;
+}
+
+.banner .title img {
+    width: 80%;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.welcome {
+    height: 500px;
+    padding: 0px 200px;
+    margin: 50px 0;
+}
+
+.welcome h1 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.welcome h1 sapan {
+    font-size: 80px;
+    color: rgb(45, 57, 83);
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.intr {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+
+.intr-img {
+    float: left;
+    width: 45%;
+    height: 400px;
+}
+
+.intr-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto 0;
+}
+
+.intr-text {
+    float: right;
+    width: 52%;
+    height: auto;
+    height: auto;
+    margin: 0;
+}
+
+.intr-text p {
+    font-size: 20px;
+    padding: 0;
+}
+
+.tourism {
+    width: 100%;
+    height: 2150px;
+    margin-top: 80px;
+    background-color: #fbfbfb;
+}
+
+.tourism h1 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 0.1em;
+}
+
+.tourism .picScroll {
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 0;
+    user-select: none;
+    cursor: move;
+}
+
+.tourism .picScroll .scroller {
+    position: relative;
+    height: 100%;
+    width: fit-content;
+}
+
+.tourism .picScroll img {
+    width: auto;
+    height: 400px;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.scenicSpot {
+    width: auto;
+    height: 1000px;
+    margin-top: 80px;
+    padding: 0 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.scenicSpot .scenicSpot-item {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item .spotImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item .spotImg img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: all 1.0s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item h2 {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    bottom: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    color: white;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: all 1.0s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item p {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item button {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.scenicSpot .scenicSpot-item:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.scenicSpot .scenicSpot-item:hover .spotImg {
+    width: 100%;
+    height: 50%;
+}
+
+.scenicSpot .scenicSpot-item:hover .spotImg img {
+    transform: translate(0, -20%);
+}
+
+.scenicSpot .scenicSpot-item:hover h2 {
+    display: block;
+    clear: both;
+    color: black;
+    bottom: 0;
+    line-height: normal;
+    background-image: none;
+    z-index: 0;
+    margin: 20px 0;
+}
+
+.scenicSpot .scenicSpot-item:hover p {
+    display: block;
+    position: relative;
+    width: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0 40px;
+}
+
+.scenicSpot .scenicSpot-item:hover button {
+    display: block;
+    margin: 30px auto;
+    background-color: rgb(45, 57, 83);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.scenicSpot .scenicSpot-item:hover button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.eat {
+    width: auto;
+    height: 550px;
+    padding: 80px 200px;
+}
+
+.eat .eat-title {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.eat .eat-title h1 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.eat .eat-title button {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(45, 57, 83);
+    color: white;
+    border: none;
+    margin: 30px 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.eat .eat-title button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.eat .eat-img {
+    width: 55%;
+    height: 500px;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: auto 0;
+}
+
+.eat .eat-img .img-items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.eat .eat-img .img-items img {
+    width: 100%;
+    height: 100%;
+    transition: all 1.0s ease-in-out;
+}
+
+.eat .eat-img .img-items .img-items-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    transition: all 1.0s ease-in-out;
+    background-color: rgba(45, 57, 83, 0.5);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+}
+
+.eat .eat-img .img-items .img-items-title h2 {
+    font-size: 20px;
+    color: white;
+    line-height: 100%;
+    margin: auto;
+}
+
+.eat .eat-img .img-items:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    transform: translate(0, -10px);
+}
+
+.eat .eat-img .img-items:hover .img-items-title {
+    opacity: 1;
+}
+
+.transportation {
+    width: auto;
+    height: fit-content;
+    padding: 80px 200px;
+    background-color: #fbfbfb;
+}
+
+.transportation .transportation-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.transportation .transportation-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+
+.transportation .show-box {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.transportation .show-box .left {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: left;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+}
+
+.transportation .show-box .left ul {
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #5f6464;
+    width: auto;
+    height: auto;
+    list-style: none;
+    margin: auto 0;
+    padding: 0;
+}
+
+.transportation .show-box .left ul li {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.transportation .show-box .left ul li i {
+    margin-right: 10px;
+}
+
+.transportation .show-box .left ul li::after {
+    content: "\F285";
+    font-size: 20px;
+    font-family: "bootstrap-icons" !important;
+    display: inline;
+    margin-left: 10px;
+}
+
+.transportation .show-box .left ul hr {
+    width: 80%;
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 0 auto;
+}
+
+.transportation .show-box .left ul li:hover {
+    font-weight: 600;
+    background-color: rgb(45, 57, 83);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    transform: translateX(20px);
+}
+
+.transportation-list-active {
+    font-weight: 600;
+    background-color: rgb(45, 57, 83);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    transform: translateX(20px);
+}
+
+.transportation .show-box .right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+.transportation .show-box .right .info {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.transportation .show-box .right p {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(45, 57, 83, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: auto;
+    height: fit-content;
+    padding: 20px 20px;
+}
+
+.info-hidden {
+    display: none;
+}
+
+#flightShow {
+    background-image: url(../img/flight.jpg);
+}
+
+#trainShow {
+    background-image: url(../img/train.jpg);
+}
+
+#busShow {
+    background-image: url(../img/bus.jpg);
+}
+
+#subwayShow {
+    background-image: url(../img/subway.jpg);
+}
+
+#busShow p {
+    top: 0;
+}
+
+#subwayShow p {
+    top: 0;
+}
+
+.learnMore {
+    width: auto;
+    height: 400px;
+    background-color: #fbfbfb;
+    background-image: url(../img/learnMore.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.learnMore .bg {
+    position: relative;
+    width: auto;
+    height: -webkit-fill-available;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 200px;
+}
+
+.learnMore h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: white;
+}
+
+.learnMore p {
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+}
+
+.learnMore-btn {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.learnMore-btn button {
+    display: block;
+    background-color: white;
+    color: rgb(45, 57, 83);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.learnMore-btn button:hover {
+    background-color: rgb(45, 57, 83);
+    color: white;
+}

@@ -1,0 +1,103 @@
+.banner {
+    background-image: url("../img/history-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.history {
+    width: auto;
+    height: fit-content;
+    padding: 100px 200px;
+    background-color: white;
+}
+
+
+.history-box {
+    width: 100%;
+    padding-bottom: 50px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.history-box .left {
+    position: relative;
+    width: 20%;
+    height: auto;
+}
+
+.history-box .left::before {
+    content: '';
+    width: 3px;
+    height: 200%;
+    border-radius: 10px;
+    background-color: rgb(45, 57, 83);
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    transform: translateX(-50%);
+}
+
+.history-box .left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: rgb(45, 57, 83);
+}
+
+.history-box .left h2::before {
+    content: '\F292';
+    font-family: bootstrap-icons;
+    font-size: 2rem;
+    color: rgb(45, 57, 83);
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.history-box .right {
+    width: 80%;
+    height: auto;
+}
+
+.history-box .right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+}
+
+.history>p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>长沙 | 搜索</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-origin" id="navbar">
+            <ul>
+                <li><a href="index.html"><img id="navLogo" src="img/logo-white.png" alt=""></a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#scenicSpot">景点</a></li>
+                <li><a href="culture.html">文化</a></li>
+                <li><a href="history.html">历史</a></li>
+                <li><a href="index.html#about">关于</a></li>
+                <li>
+                    <a href="search.html"><i class="bi bi-search"></i></a>
+                    <a href="login.html"><i class="bi bi-person-circle"></i></a>
+                    <a href="javascript:unavailable();"><i class="bi bi-translate"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="search">
+            <!--搜索框-->
+            <form>
+                <h1>搜索长沙</h1>
+                <input type="text" name="search" id="search" placeholder="搜索">
+                <button type="button" id="search-btn"><i class="bi bi-search"></i></button>
+                <div class="disabled" id="warning">
+                    <p class="disabled" id="warning-p">
+                        <i class="bi bi-exclamation-circle"></i>请输入要搜索的内容！
+                    </p>
+                </div>
+                <script src="js/search.js"></script>
+            </form>
+            <div class="mouse">
+                <i class="bi bi-mouse"></i>
+                <i class="bi bi-chevron-double-down"></i>
+            </div>
+        </section>
+
+        <section class="hotList">
+            <h2><i class="bi bi-fire"></i>热门搜索</h2>
+            <ul>
+                <li>
+                    <span id="num">1</span>
+                    <a href="#">长沙特种兵一日游</a>
+                    <span class="view">99999</span>
+                    <span class="Boom"></span>
+                </li>
+                <li>
+                    <span id="num">2</span>
+                    <a href="#">橘子洲打卡攻略</a>
+                    <span class="view">999555</span>
+                    <span class="recommend"></span>
+                </li>
+                <li>
+                    <span id="num">3</span>
+                    <a href="#">长沙博物馆门票预约</a>
+                    <span class="view">999555</span>
+                    <span class="recommend"></span>
+                </li>
+                <li>
+                    <span id="num">4</span>
+                    <a href="#">没有围墙的湖南大学</a>
+                    <span class="view">999555</span>
+                    <span class="recommend"></span>
+                </li>
+                <li>
+                    <span id="num">5</span>
+                    <a href="#">湖南省博物馆</a>
+                    <span class="view">999555</span>
+                    <span class="hot"></span>
+                </li>
+                <li>
+                    <span id="num">6</span>
+                    <a href="#">岳麓书院开放时间</a>
+                    <span class="view">999555</span>
+                    <span class="hot"></span>
+                </li>
+                <li>
+                    <span id="num">7</span>
+                    <a href="#">五一广场人从众𠈌</a>
+                    <span class="view">999555</span>
+                    <span class="hot"></span>
+                </li>
+                <li>
+                    <span id="num">8</span>
+                    <a href="#">长沙浪漫烟花yyds</a>
+                    <span class="view">999555</span>
+                    <span class="new"></span>
+                </li>
+                <li>
+                    <span id="num">9</span>
+                    <a href="#">全国百强！长沙这些地方上榜</a>
+                    <span class="view">999555</span>
+                    <span class="new"></span>
+                </li>
+            </ul>
+        </section>
+        
+        <footer>
+            <div class="info">
+                <div class="linkArea">
+                    <h3>网站地图</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="index.html#scenicSpot">景点</a></li>
+                        <li><a href="culture.html">文化</a></li>
+                        <li><a href="history.html">历史</a></li>
+                    </ul>
+                </div>
+                <div class="linkArea">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="http://www.changsha.gov.cn/">长沙市政府</a></li>
+                        <li><a href="https://www.hncsmtr.com/">长沙轨道交通</a></li>
+                        <li><a href="http://corp.mgtv.com/">湖南广播电视台</a></li>
+                    </ul>
+                </div>
+                <div class="linkArea">
+                    <h3>服务协议</h3>
+                    <ul>
+                        <li><a href="http://rxgzs.cn/clause">用户条款</a></li>
+                        <li><a href="https://rxgzs.cn/privacy">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="logoArea">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="copy">
+                <hr>
+                <p>Copyright © 2023 Chris Liu All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
